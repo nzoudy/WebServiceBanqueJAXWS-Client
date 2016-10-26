@@ -56,13 +56,13 @@ public class BanqueServiceProxy implements webservice.BanqueService {
     return banqueService.conversionEuroFcfa(montant);
   }
   
-  public webservice.Compte[] listeAllComptes() throws java.rmi.RemoteException{
+  public webservice.Account[] listeAllComptes() throws java.rmi.RemoteException{
     if (banqueService == null)
       _initBanqueServiceProxy();
     return banqueService.listeAllComptes();
   }
   
-  public webservice.Compte getCompte(int code) throws java.rmi.RemoteException{
+  public webservice.Account getCompte(int code) throws java.rmi.RemoteException{
     if (banqueService == null)
       _initBanqueServiceProxy();
     return banqueService.getCompte(code);

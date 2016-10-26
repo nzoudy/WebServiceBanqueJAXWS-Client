@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/webservice/Account.java=UTF-8
 encoding//src/webservice/BanqueService.java=UTF-8
 encoding//src/webservice/BanqueServicePortBindingStub.java=UTF-8
 encoding//src/webservice/BanqueWS.java=UTF-8
 encoding//src/webservice/BanqueWSLocator.java=UTF-8
-encoding//src/webservice/Compte.java=UTF-8

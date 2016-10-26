@@ -1,5 +1,5 @@
 /**
- * Compte.java
+ * Account.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,15 +7,15 @@
 
 package webservice;
 
-public class Compte  implements java.io.Serializable {
+public class Account  implements java.io.Serializable {
     private int code;
 
     private double solde;
 
-    public Compte() {
+    public Account() {
     }
 
-    public Compte(
+    public Account(
            int code,
            double solde) {
            this.code = code;
@@ -24,7 +24,7 @@ public class Compte  implements java.io.Serializable {
 
 
     /**
-     * Gets the code value for this Compte.
+     * Gets the code value for this Account.
      * 
      * @return code
      */
@@ -34,7 +34,7 @@ public class Compte  implements java.io.Serializable {
 
 
     /**
-     * Sets the code value for this Compte.
+     * Sets the code value for this Account.
      * 
      * @param code
      */
@@ -44,7 +44,7 @@ public class Compte  implements java.io.Serializable {
 
 
     /**
-     * Gets the solde value for this Compte.
+     * Gets the solde value for this Account.
      * 
      * @return solde
      */
@@ -54,7 +54,7 @@ public class Compte  implements java.io.Serializable {
 
 
     /**
-     * Sets the solde value for this Compte.
+     * Sets the solde value for this Account.
      * 
      * @param solde
      */
@@ -64,8 +64,8 @@ public class Compte  implements java.io.Serializable {
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Compte)) return false;
-        Compte other = (Compte) obj;
+        if (!(obj instanceof Account)) return false;
+        Account other = (Account) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -95,10 +95,10 @@ public class Compte  implements java.io.Serializable {
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Compte.class, true);
+        new org.apache.axis.description.TypeDesc(Account.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://webservice/", "compte"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://webservice/", "account"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("code");
         elemField.setXmlName(new javax.xml.namespace.QName("", "code"));

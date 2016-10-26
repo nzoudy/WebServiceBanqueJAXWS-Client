@@ -10,6 +10,6 @@ package webservice;
 public interface BanqueService extends java.rmi.Remote {
     public java.lang.String test() throws java.rmi.RemoteException;
     public double conversionEuroFcfa(double montant) throws java.rmi.RemoteException;
-    public webservice.Compte[] listeAllComptes() throws java.rmi.RemoteException;
-    public webservice.Compte getCompte(int code) throws java.rmi.RemoteException;
+    public webservice.Account[] listeAllComptes() throws java.rmi.RemoteException;
+    public webservice.Account getCompte(int code) throws java.rmi.RemoteException;
 }

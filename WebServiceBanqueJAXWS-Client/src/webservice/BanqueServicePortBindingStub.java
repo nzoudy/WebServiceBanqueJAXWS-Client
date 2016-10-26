@@ -45,8 +45,8 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("listeAllComptes");
-        oper.setReturnType(new javax.xml.namespace.QName("http://webservice/", "compte"));
-        oper.setReturnClass(webservice.Compte[].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://webservice/", "account"));
+        oper.setReturnClass(webservice.Account[].class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -56,8 +56,8 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
         oper.setName("getCompte");
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "code"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"), int.class, false, false);
         oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://webservice/", "compte"));
-        oper.setReturnClass(webservice.Compte.class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://webservice/", "account"));
+        oper.setReturnClass(webservice.Account.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
@@ -94,9 +94,9 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
             java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
             java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
             java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
-            qName = new javax.xml.namespace.QName("http://webservice/", "compte");
+            qName = new javax.xml.namespace.QName("http://webservice/", "account");
             cachedSerQNames.add(qName);
-            cls = webservice.Compte.class;
+            cls = webservice.Account.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -235,7 +235,7 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
 }
     }
 
-    public webservice.Compte[] listeAllComptes() throws java.rmi.RemoteException {
+    public webservice.Account[] listeAllComptes() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -259,9 +259,9 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
         else {
             extractAttachments(_call);
             try {
-                return (webservice.Compte[]) _resp;
+                return (webservice.Account[]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (webservice.Compte[]) org.apache.axis.utils.JavaUtils.convert(_resp, webservice.Compte[].class);
+                return (webservice.Account[]) org.apache.axis.utils.JavaUtils.convert(_resp, webservice.Account[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -269,7 +269,7 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
 }
     }
 
-    public webservice.Compte getCompte(int code) throws java.rmi.RemoteException {
+    public webservice.Account getCompte(int code) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -293,9 +293,9 @@ public class BanqueServicePortBindingStub extends org.apache.axis.client.Stub im
         else {
             extractAttachments(_call);
             try {
-                return (webservice.Compte) _resp;
+                return (webservice.Account) _resp;
             } catch (java.lang.Exception _exception) {
-                return (webservice.Compte) org.apache.axis.utils.JavaUtils.convert(_resp, webservice.Compte.class);
+                return (webservice.Account) org.apache.axis.utils.JavaUtils.convert(_resp, webservice.Account.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
